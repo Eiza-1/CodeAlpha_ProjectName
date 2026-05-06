@@ -17,8 +17,8 @@ The Network Traffic Analyzer is a tool designed to capture, analyze, and visuali
 
 **Prerequisites:**
 
-*   Operating System: Specify Supported OS -  Windows 10/11, Linux (Ubuntu 20.04+), macOS
-*   Required Software: List Dependencies - Python 3.8+, libpcap/WinPcap, Qt5, scapy
+*   Operating System: Windows 10/11, Linux (Ubuntu 20.04+), macOS
+*   Required Software: Python 3.8+, libpcap/WinPcap, Qt5, scapy
 
 **Installation Steps:**
 
@@ -48,7 +48,7 @@ The analyzer is primarily controlled via the command line.
 
 ## Configuration
 
-*   **Configuration File:** [Specify location of the config file - e.g., `config.ini`]
+*   **Configuration File:** ease to use on the directory extracted
     *   This file allows you to customize settings such as:
         *   Sampling Rate
         *   Output File Format
