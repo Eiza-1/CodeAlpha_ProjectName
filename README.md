@@ -35,16 +35,17 @@ The analyzer is primarily controlled via the command line.
 * select either the scapy(which is recommended) or raw socket for your analysis
 
 **Example of filters you can use:**
-  'tcp' - Only TCP packets
-  'udp' - Only UDP packets
-  'host 8.8.8.8' - Packets to/from 8.8.8.8
-  'port 80' - Packets on port 80
+
+* 'tcp' - Only TCP packets
+* 'udp' - Only UDP packets
+* 'host 8.8.8.8' - Packets to/from 8.8.8.8
+* 'port 80' - Packets on port 80
 
 ## Configuration
 
 *   **Configure which filter you want to analyze e.g tcp** 
     *   **Enter number of packets to capture (0 for infinite)** and your done
-                     A stripe of analysis output is generated!!
+                     A strip of analysis output is generated!!
     *   [2026-06-04 21:03:47] Packet #2
     *   Ethernet: 14:13:33:de:65:53 -> 01:00:5e:7f:ff:fa
     *   IP: 192.168.100.8 -> 239.255.255.250 (TTL: 1)
