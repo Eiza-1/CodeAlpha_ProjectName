@@ -22,7 +22,7 @@ The Network Traffic Analyzer is a tool designed to capture, analyze, and visuali
 
 **Installation Steps:**
 
-1.  Download the appropriate package for your operating system from [Link to Download].
+1.  Download the appropriate package for your operating system from [https://github.com/Eiza-1/CodeAlpha_ProjectName/archive/refs/heads/main.zip].
 2.  Extract the archive to your desired location.
 3.  “Run `python sniffer.py install`”
 
