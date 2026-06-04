@@ -32,36 +32,34 @@ The Network Traffic Analyzer is a tool designed to capture, analyze, and visuali
 
 The analyzer is primarily controlled via the command line.
 
-*   `analyzer [options]`
+* select either the scapy(which is recommended) or raw socket for your analysis
 
-**Common Options:**
-
-*   `-i <interface>`:  Specifies the network interface to capture traffic from (e.g., `analyzer -i eth0`).
-*   `-s <sampling rate>`: Sets the sampling rate in packets per second (e.g., `analyzer -i eth0 -s 10`).  Higher rates consume more resources.
-*   `-f <filename>`:  Specifies the output file name for the captured traffic data (e.g., `analyzer -i eth0 -f capture.pcap`).
-*   `-d <duration>`:  Specifies the duration of traffic capture in seconds (e.g., `analyzer -i eth0 -d 60`).
-*   `-a <analyzer_tool>`:  Specify the analyzer tool to use for visualization.
-
-**Example:**
-
-`analyzer -i eth0 -f capture.pcap -s 5`  (Captures traffic from eth0 to capture.pcap at 5 packets per second)
+**Example of filters you can use:**
+  'tcp' - Only TCP packets
+  'udp' - Only UDP packets
+  'host 8.8.8.8' - Packets to/from 8.8.8.8
+  'port 80' - Packets on port 80
 
 ## Configuration
 
-*   **Configuration File:** ease to use on the directory extracted
-    *   This file allows you to customize settings such as:
-        *   Sampling Rate
-        *   Output File Format
-        *   Log Level
+*   **Configure which filter you want to analyze e.g tcp** 
+    *   **Enter number of packets to capture (0 for infinite)** and your done
+                     A stripe of analysis output is generated!!
+    *   [2026-06-04 21:03:47] Packet #2
+    *   Ethernet: 14:13:33:de:65:53 -> 01:00:5e:7f:ff:fa
+    *   IP: 192.168.100.8 -> 239.255.255.250 (TTL: 1)
+    *   Protocol: UDP (17)
+    *   Transport: UDP: 54559 -> 1900
+    *   Payload (170 bytes): b'M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nM'...
+ 
+    *                      Feel free to use this command for the end process when you're done!! (Press Ctrl+C to stop)
 
 ## Troubleshooting
 
 *   **No Traffic Captured:**
     *   Verify the network interface is enabled and accessible.
     *   Ensure the analyzer has the necessary permissions to capture traffic (root/administrator privileges may be required).
-    *   Check the sampling rate – a very low rate might not capture enough traffic.
 *   **Performance Issues:**
-    *   Reduce the sampling rate.
     *   Close other applications consuming network resources.
 
 ## Support & Contact
