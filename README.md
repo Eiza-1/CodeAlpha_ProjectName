@@ -44,14 +44,14 @@ The analyzer is primarily controlled via the command line.
 ## Configuration
 
 *   **Configure which filter you want to analyze e.g tcp** 
-    *   **Enter number of packets to capture (0 for infinite)** and your done
+    *   **Enter number of packets to capture (0 for infinite) OR any other value e.g 1-150** and the program gets started
     *                 A strip of analysis output is generated!!
-    *   [2026-06-04 21:03:47] Packet #2
+    *   "[2026-06-04 21:03:47] Packet #2
     *   Ethernet: 14:13:33:de:65:53 -> 01:00:5e:7f:ff:fa
     *   IP: 192.168.100.8 -> 239.255.255.250 (TTL: 1)
     *   Protocol: UDP (17)
     *   Transport: UDP: 54559 -> 1900
-    *   Payload (170 bytes): b'M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nM'...
+    *   Payload (170 bytes): b'M-SEARCH * HTTP/1.1\r\nHOST: 239.255.255.250:1900\r\nM'..."
  
     *                      Feel free to use this command for the end process when you're done!! (Press Ctrl+C to stop)
 
